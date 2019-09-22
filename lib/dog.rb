@@ -1,3 +1,5 @@
+require 'pry'
+
 class Dog
 
     @@all = []
@@ -13,5 +15,15 @@ class Dog
 
     def self.clear_all
         #clear array @@all of all Dog instances
+        @@all.clear
+    end
+
+    def self.print_all
+        #print each name of dog to the terminal
+        @@all.each do |each_dog|
+            p each_dog
+        end
     end
 end
+
+binding.pry
