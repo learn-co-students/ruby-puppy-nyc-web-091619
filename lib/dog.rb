@@ -3,7 +3,7 @@ require 'pry'
 class Dog
 
     # attr_reader :name
-    attr_accessor :name
+    #attr_accessor :name
 
     @@all = []
 
@@ -28,6 +28,6 @@ class Dog
         #     p each_dog
         # end
 
-        p @name
+        #p name is "Dog"
     end
 end
