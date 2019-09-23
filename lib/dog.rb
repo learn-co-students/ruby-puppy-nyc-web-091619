@@ -25,7 +25,7 @@ class Dog
     def self.print_all
         #print each name of dog to the terminal
         @@all.each do |each_dog|
-            puts each_dog.name # prints object_id as well as @name
+            puts each_dog.name
         end
 
         #p name is "Dog"
