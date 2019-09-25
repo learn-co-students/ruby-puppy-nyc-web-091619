@@ -9,6 +9,7 @@ class Dog
 
     def initialize(name)
         @name = name
+        @save = save
         @@all << self
     end
 
@@ -30,11 +31,9 @@ class Dog
     end
     
     def save
-        @@all.find do |dog_name|
-            @@all.dog_name == dog_name
-            binding.pry
-            "save this dog"
-        end
+        
         #@@all << # dog instance to array
     end
 end
+
+#binding.pry
